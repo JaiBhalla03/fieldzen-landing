@@ -6,7 +6,10 @@ import { ProductCard } from '@/components/ProductCard';
 
 export default function Product() {
   return (
-    <div className='flex-col flex gap-3 md:gap-5'>
+    <div className='relative flex-col flex gap-3 md:gap-5 pb-10'>
+      <div className="absolute inset-x-0 bottom-0 h-px w-full bg-neutral-200/80 dark:bg-neutral-800/80">
+        <div className="absolute mx-auto h-px w-40 bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+      </div>
         <h1 className='text-center text-4xl md:text-5xl font-bold text-zinc-600'>
           {"What is FieldZen?"
             .split(" ")
